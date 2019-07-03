@@ -1,0 +1,164 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &100100000
+Prefab:
+  m_ObjectHideFlags: 1
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 1342906572844524}
+  m_IsPrefabParent: 1
+--- !u!1 &1342906572844524
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4690673408556834}
+  - component: {fileID: 114122412969522640}
+  m_Layer: 0
+  m_Name: AudioManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4690673408556834
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1342906572844524}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &114122412969522640
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1342906572844524}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5e855760ac780aa4ab6b3093a4117079, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sounds:
+  - name: ButtonClick
+    mixerGroup: {fileID: 24300002, guid: 54ad0136616f93345afd708d45838611, type: 2}
+    clip: {fileID: 8300000, guid: 000b2f8bd2b027f4ca64c313203d2b23, type: 3}
+    volume: 0.3
+    pitch: 1
+    randomVolume: 0
+    randomPitch: 0.2
+    playOnAwake: 0
+    loop: 0
+    source: {fileID: 0}
+  - name: BuildSound
+    mixerGroup: {fileID: 24300002, guid: 54ad0136616f93345afd708d45838611, type: 2}
+    clip: {fileID: 8300000, guid: 07b21ebf4b0802f40a9c4e977afc50e1, type: 3}
+    volume: 0.05
+    pitch: 1
+    randomVolume: 0
+    randomPitch: 0.2
+    playOnAwake: 0
+    loop: 0
+    source: {fileID: 0}
+  - name: BackgroundMusic
+    mixerGroup: {fileID: 24300002, guid: 54ad0136616f93345afd708d45838611, type: 2}
+    clip: {fileID: 8300000, guid: 136cf9bc13a7ed243a863412adb146c0, type: 3}
+    volume: 0.05
+    pitch: 1
+    randomVolume: 0
+    randomPitch: 0
+    playOnAwake: 0
+    loop: 1
+    source: {fileID: 0}
+  - name: EnemyDeath
+    mixerGroup: {fileID: 24300002, guid: 54ad0136616f93345afd708d45838611, type: 2}
+    clip: {fileID: 8300000, guid: 715c519354e2fc448b17ba114cfbadee, type: 3}
+    volume: 0.05
+    pitch: 1
+    randomVolume: 0
+    randomPitch: 0.2
+    playOnAwake: 0
+    loop: 0
+    source: {fileID: 0}
+  - name: SellTurret
+    mixerGroup: {fileID: 24300002, guid: 54ad0136616f93345afd708d45838611, type: 2}
+    clip: {fileID: 8300000, guid: a87bd7ad6493b3c488914a4c630211e4, type: 3}
+    volume: 0.15
+    pitch: 1
+    randomVolume: 0
+    randomPitch: 0.1
+    playOnAwake: 0
+    loop: 0
+    source: {fileID: 0}
+  - name: NormalShot
+    mixerGroup: {fileID: 24300002, guid: 54ad0136616f93345afd708d45838611, type: 2}
+    clip: {fileID: 8300000, guid: eb90b52e434b5c9448768c14d6edc589, type: 3}
+    volume: 0.05
+    pitch: 0.5
+    randomVolume: 0
+    randomPitch: 0.35
+    playOnAwake: 0
+    loop: 0
+    source: {fileID: 0}
+  - name: LaserBeam
+    mixerGroup: {fileID: 24300002, guid: 54ad0136616f93345afd708d45838611, type: 2}
+    clip: {fileID: 8300000, guid: d81202ce5e99e9c42a29ecbd92bdb33a, type: 3}
+    volume: 0.1
+    pitch: 0.5
+    randomVolume: 0
+    randomPitch: 0.2
+    playOnAwake: 0
+    loop: 0
+    source: {fileID: 0}
+  - name: MissleShot
+    mixerGroup: {fileID: 24300002, guid: 54ad0136616f93345afd708d45838611, type: 2}
+    clip: {fileID: 8300000, guid: 43160b6f4a039c14eacd554d4a1231d5, type: 3}
+    volume: 0.1
+    pitch: 0.5
+    randomVolume: 0
+    randomPitch: 0.2
+    playOnAwake: 0
+    loop: 0
+    source: {fileID: 0}
+  - name: UpgradeTurret
+    mixerGroup: {fileID: 24300002, guid: 54ad0136616f93345afd708d45838611, type: 2}
+    clip: {fileID: 8300000, guid: fb10666845551494cb659970e423764f, type: 3}
+    volume: 0.1
+    pitch: 1.2
+    randomVolume: 0
+    randomPitch: 0
+    playOnAwake: 0
+    loop: 0
+    source: {fileID: 0}
+  - name: GameOverSound
+    mixerGroup: {fileID: 24300002, guid: 54ad0136616f93345afd708d45838611, type: 2}
+    clip: {fileID: 8300000, guid: 5d697b71c40807e47b788f37d2f5a864, type: 3}
+    volume: 0.1
+    pitch: 1.2
+    randomVolume: 0
+    randomPitch: 0
+    playOnAwake: 0
+    loop: 0
+    source: {fileID: 0}
+  - name: WinSound
+    mixerGroup: {fileID: 24300002, guid: 54ad0136616f93345afd708d45838611, type: 2}
+    clip: {fileID: 8300000, guid: b0bebdd94424eac459c0780a19ffd141, type: 3}
+    volume: 0.05
+    pitch: 0.8
+    randomVolume: 0
+    randomPitch: 0
+    playOnAwake: 0
+    loop: 0
+    source: {fileID: 0}
